@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 25px 30px;
+    gap: 20px;
+}
+
+nav h4 {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav i {
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#center {
+    width: 100%;
+    padding: 20px 50px;
+}
+
+#center h1 {
+    font-size: 4.5vw;
+    font-weight: 500;
+    line-height: 4.5vw;
+}
+
+#center-in {
+    height: 10%;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#center-in p {
+    font-size: 1.9vw;
+    font-weight: 600;
+    line-height: 2vw;
+}
+
+#right {
+    width: 20%;
+}
+
+.elem {
+    margin-top: 5px;
+    padding: 10px 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.elem a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.elem i {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.elem:hover {
+    background-color: #f5f5f5;
+}
+
+.elem:hover i {
+    opacity: 1;
+}
+
+#bottom {
+    width: 100%;
+    height: 33.5vh;
+    background-image: url(Image.png);
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        height: 30px;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    nav h4 {
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    nav i {
+        padding: 7px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+
+    #center {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    #center h1 {
+        font-size: 10vw;
+        line-height: 10.3vw;
+    }
+
+    #center-in {
+        height: 10%;
+        margin-top: 25px;
+        display: flex;
+        gap: 17px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #center-in p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    .elem {
+        padding: 8px 0;
+        border-top: 1.5px solid black;
+        cursor: pointer;
+    }
+
+    .elem a {
+        color: #303030;
+        font-size: 13px;
+    }
+
+    .elem i {
+        font-size: 14px;
+        opacity: 1;
+        color: #303030;
+    }
+
+    #bottom {
+        height: 42.5vh;
+        background-position: 0 10%;
+    }
+
+}
